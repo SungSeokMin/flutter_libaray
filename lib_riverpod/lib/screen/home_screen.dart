@@ -1,14 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_state_tutorial/layout/default_layout.dart';
-import 'package:flutter_state_tutorial/screen/auto_dispose_modifier_screen.dart';
-import 'package:flutter_state_tutorial/screen/code_generation_screen.dart';
-import 'package:flutter_state_tutorial/screen/family_modifier_screen.dart';
-import 'package:flutter_state_tutorial/screen/future_provider_screen.dart';
-import 'package:flutter_state_tutorial/screen/listen_provider_screen.dart';
-import 'package:flutter_state_tutorial/screen/provider_screen.dart';
-import 'package:flutter_state_tutorial/screen/state_notifier_provier_screen.dart';
 import 'package:flutter_state_tutorial/screen/state_provider_screen.dart';
-import 'package:flutter_state_tutorial/screen/stream_provider_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,9 +23,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const StateNotifierProviderScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const StateNotifierProviderScreen(),
+              // ));
             },
             child: const Text(
               'StateNotifierProviderScreen',
@@ -41,9 +33,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const FutureProviderScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const FutureProviderScreen(),
+              // ));
             },
             child: const Text(
               'FutureProviderScreen',
@@ -51,9 +43,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const StreamProviderScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const StreamProviderScreen(),
+              // ));
             },
             child: const Text(
               'StreamProviderScreen',
@@ -61,9 +53,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const FamilyModifierScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const FamilyModifierScreen(),
+              // ));
             },
             child: const Text(
               'FamilyModifierScreen',
@@ -71,9 +63,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const AutoDisposeModifierScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const AutoDisposeModifierScreen(),
+              // ));
             },
             child: const Text(
               'AutoDisposeModifierScreen',
@@ -81,9 +73,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const ListenProviderScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const ListenProviderScreen(),
+              // ));
             },
             child: const Text(
               'ListenProviderScreen',
@@ -91,9 +83,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const ProviderScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const ProviderScreen(),
+              // ));
             },
             child: const Text(
               'ProviderScreen',
@@ -101,9 +93,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (_) => const CodeGenerationScreen(),
-              ));
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => const CodeGenerationScreen(),
+              // ));
             },
             child: const Text(
               'CodeGenerationScreen',
