@@ -10,4 +10,18 @@ String gState(GStateRef ref) {
   return 'Hello World';
 }
 
+@riverpod
+Future<int> gStateFuture(GStateFutureRef ref) async {
+  await Future.delayed(const Duration(seconds: 3));
+
+  return 10;
+}
+
+@Riverpod(keepAlive: true)
+Future<int> gStateFuture2(GStateFuture2Ref ref) async {
+  await Future.delayed(const Duration(seconds: 3));
+
+  return 10;
+}
+
 // 2. Parameter(Family)
