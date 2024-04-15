@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_v7/route/router.dart';
 
 void main() {
   return runApp(
@@ -12,8 +11,6 @@ class _App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: router,
-    );
+    return MaterialApp();
   }
 }
