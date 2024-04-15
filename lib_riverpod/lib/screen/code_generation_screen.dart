@@ -12,6 +12,7 @@ class CodeGenerationScreen extends ConsumerWidget {
     final state2 = ref.watch(gStateFutureProvider);
     final state3 = ref.watch(gStateFuture2Provider);
     final state4 = ref.watch(gStateMultiplyProvider(number1: 3, number2: 5));
+    final state5 = ref.watch(gStateNotifierProvider);
 
     return DefaultLayout(
       title: 'CodeGenerationScreen',
@@ -42,6 +43,19 @@ class CodeGenerationScreen extends ConsumerWidget {
             ),
           ),
           Text('state4: ${state4.toString()}'),
+          Text('state5: $state5'),
+          ElevatedButton(
+            onPressed: () {
+              ref.read(gStateNotifierProvider.notifier).increment();
+            },
+            child: Text('UP'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              ref.read(gStateNotifierProvider.notifier).decrement();
+            },
+            child: Text('DOWN'),
+          ),
         ],
       ),
     );
