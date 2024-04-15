@@ -4,6 +4,7 @@ import 'package:flutter_state_tutorial/screen/auto_dispose_modifier_screen.dart'
 import 'package:flutter_state_tutorial/screen/family_modifier_screen.dart';
 import 'package:flutter_state_tutorial/screen/future_provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/listen_provider_screen.dart';
+import 'package:flutter_state_tutorial/screen/provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/select_provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/state_notifier_provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/state_provider_screen.dart';
@@ -95,17 +96,17 @@ class HomeScreen extends StatelessWidget {
               ));
             },
             child: const Text(
-              'ProviderScreen',
+              'SelectProviderScreen',
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              // Navigator.of(context).push(MaterialPageRoute(
-              //   builder: (_) => const CodeGenerationScreen(),
-              // ));
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (_) => const ProviderScreen(),
+              ));
             },
             child: const Text(
-              'CodeGenerationScreen',
+              'ProviderScreen',
             ),
           ),
         ],
