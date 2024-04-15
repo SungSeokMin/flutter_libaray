@@ -44,17 +44,27 @@ class CodeGenerationScreen extends ConsumerWidget {
           ),
           Text('state4: ${state4.toString()}'),
           Text('state5: $state5'),
-          ElevatedButton(
-            onPressed: () {
-              ref.read(gStateNotifierProvider.notifier).increment();
-            },
-            child: Text('UP'),
+          Row(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  ref.read(gStateNotifierProvider.notifier).increment();
+                },
+                child: Text('UP'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  ref.read(gStateNotifierProvider.notifier).decrement();
+                },
+                child: Text('DOWN'),
+              ),
+            ],
           ),
           ElevatedButton(
             onPressed: () {
-              ref.read(gStateNotifierProvider.notifier).decrement();
+              ref.invalidate(gStateNotifierProvider);
             },
-            child: Text('DOWN'),
+            child: const Text('Invalidate'),
           ),
         ],
       ),
