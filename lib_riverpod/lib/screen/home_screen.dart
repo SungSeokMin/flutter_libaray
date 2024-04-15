@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_state_tutorial/layout/default_layout.dart';
+import 'package:flutter_state_tutorial/screen/family_modifier_screen.dart';
 import 'package:flutter_state_tutorial/screen/future_provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/state_notifier_provider_screen.dart';
 import 'package:flutter_state_tutorial/screen/state_provider_screen.dart';
@@ -56,9 +57,9 @@ class HomeScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // Navigator.of(context).push(MaterialPageRoute(
-              //   builder: (_) => const FamilyModifierScreen(),
-              // ));
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (_) => const FamilyModifierScreen(),
+              ));
             },
             child: const Text(
               'FamilyModifierScreen',
