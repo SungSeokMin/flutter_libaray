@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:go_router_v7/layout/default_layout.dart';
+import 'package:go_router_v7/screens/2_named_screen.dart';
 
 class RootScreen extends StatelessWidget {
   const RootScreen({super.key});
@@ -15,6 +16,12 @@ class RootScreen extends StatelessWidget {
               context.go('/basic');
             },
             child: Text('Go Basic'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.goNamed(NamedScreen.name);
+            },
+            child: Text('Go Named'),
           ),
         ],
       ),
