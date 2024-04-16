@@ -5,6 +5,7 @@ import 'package:go_router_v7/screens/3_push_screen.dart';
 import 'package:go_router_v7/screens/4_pop_base_screen.dart';
 import 'package:go_router_v7/screens/5_pop_return_screen.dart';
 import 'package:go_router_v7/screens/6_path_param_screen.dart';
+import 'package:go_router_v7/screens/7_query_parameter_screen.dart';
 import 'package:go_router_v7/screens/root_screen.dart';
 
 final router = GoRouter(
@@ -46,6 +47,10 @@ final router = GoRouter(
               builder: (context, state) => PathParamScreen(),
             ),
           ],
+        ),
+        GoRoute(
+          path: 'query_param',
+          builder: (context, state) => QueryParameterScreen(),
         ),
       ],
     ),
